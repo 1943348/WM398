@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My App Test</string>
+    <string name="title_activity_person_page">person_page</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="friends">Friends</string>
+    <string name="person">Person</string>
+    <string name="food">Food</string>
+    <string name="you" />
+    <string name="You">You</string>
+    <string name="settings">Settings</string>
+    <string name="FAQs">Frequently Asked Questions</string>
+    <string name="wagamamas">Wagamamas</string>
+    <string name="nandos">Nandos</string>
+    <string name="bebas_greek">Bebas Greek</string>
+    <string name="turtle_bay">Turtle Bay</string>
+    <string name="seven_thirty">7:30</string>
+    <string name="quarter_to_eight">7:45</string>
+    <string name="six_thirty">6:30</string>
+    <string name="reminder">Remind Me</string>
+    <string name="daily_rec">Your Daily Recommendation:</string>
+    <string name="bebas_info">At Beba\'s, we aim to bring the freshest and most delicious Cypriot Greek dishes to Leamington Spa.</string>
+    <string name="nandos_info">A South African multinational fast casual chain that specialises in flame-grilled peri-peri style chicken</string>
+    <string name="turtle_bay_info">Caribbean beach-style restaurant chain for jerk pit barbecues and one-pot curries, plus cocktails</string>
+    <string name="wagamamas_info">Asian-inspired &amp; Japanese chain restaurant where dishes are whisked to long communal tables</string>
+    <string name="availability">Check Availability</string>
+    <string name="checking_availability">Checking Availability</string>
+</resources>

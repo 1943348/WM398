@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawable="@drawable/ic_switch_on"
+        android:state_checked="true"
+        android:state_enabled="true" />
+
+    <item
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawable="@drawable/ic_switch_off"
+        android:state_checked="false"
+        android:state_enabled="true" />
+    <item
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawable="@drawable/ic_switch_on_disable"
+        android:state_checked="false"
+        android:state_enabled="false"/>
+    <item
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawable="@drawable/ic_switch_off_disable"
+        android:state_checked="true"
+        android:state_enabled="false"/>
+
+</selector>

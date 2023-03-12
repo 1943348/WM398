@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_card"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="40sp">
+
+    <TextView
+        android:id="@+id/booking_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|top"
+        android:padding="28sp"
+        android:text="@string/six_thirty"
+        android:textColor="#6665DD"
+        android:textSize="14sp"
+        app:fontFamily="@font/passion_one"
+        app:layout_constraintTop_toBottomOf="@id/text_booking"/>
+
+    <TextView
+        android:id="@+id/text_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:gravity="top|center"
+        android:padding="8dp"
+        android:text="@string/wagamamas"
+        android:textColor="#27233A"
+        android:textSize="14sp"
+        app:fontFamily="@font/passion_one" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/expanded_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:layout_constraintHorizontal_bias="0.5">
+        <!--app:layout_constraintStart_toStartOf="parent" -->
+        <!-- app:layout_constraintBottom_toTopOf="@id/booking_time" -->
+        <!--app:layout_constraintTop_toBottomOf="@id/booking_card"-->
+
+
+        <TextView
+            android:id="@+id/booking_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Remind Me"
+            android:padding="10sp"
+            android:textColor="@color/wh_pink"
+            android:textSize="12dp"
+            app:fontFamily="@font/passion_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp"/>
+
+        <Switch
+            android:id="@+id/reminder_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_margin="10dp"
+            android:track="@drawable/switch_bg_track"
+            android:thumb="@drawable/ic_thumb"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

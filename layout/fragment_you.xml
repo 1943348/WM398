@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YouFragment">
+
+
+    <ImageView
+        android:id="@+id/blue_tri_person_page"
+        android:layout_width="410dp"
+        android:layout_height="208dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_blue_upcoming_bookings_tri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/upcoming_bookings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:text="Upcoming Bookings"
+        android:textColor="@color/wh_dark_blue"
+        android:textSize="24dp"
+        app:fontFamily="@font/passero_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Recycler view for upcoming bookings -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcoming_bkgs_cards"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="115dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/upcoming_bkgs_cardview" >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/upcoming_reservations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="105dp"
+        android:text="4 upcoming reservations"
+        android:textColor="@color/wh_dark_blue"
+        android:textSize="12dp"
+        app:fontFamily="@font/passero_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/daily_recommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:text="@string/daily_rec"
+        android:textColor="@color/wh_dark_blue"
+        android:textSize="18dp"
+        app:fontFamily="@font/passero_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mcdonalds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:text="  McDonald's"
+        android:textColor="@color/wh_bright_blue"
+        android:textSize="18dp"
+        app:fontFamily="@font/passero_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/daily_recommendations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/your_friends"
+        android:layout_width="492dp"
+        android:layout_height="304dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_your_friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mcdonalds"
+        android:layout_width="107dp"
+        android:layout_height="66dp"
+        android:src="@drawable/maccies"
+        app:layout_constraintBottom_toTopOf="@+id/your_friends"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcoming_bkgs_cards" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
